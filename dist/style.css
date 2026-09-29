@@ -55,3 +55,8 @@
 .store-badge img{display:block;width:auto;height:52px;max-width:190px;max-height:100%;object-fit:contain}
 .store-badge:nth-of-type(2) img{height:69px}
 @media(max-width:760px){.store-badge{width:auto;height:70px}.store-badge img{height:52px;max-width:100%}.store-badge:nth-of-type(2) img{height:69px}}
+
+/* CSS-drawn arrows stay consistent across Safari and other browsers. */
+.arrow-icon{position:relative;display:inline-block!important;flex:0 0 14px;width:14px;height:14px;margin-left:0!important;font-size:0!important;line-height:0!important;color:currentColor}
+.arrow-icon::before{content:'';position:absolute;left:2px;bottom:2px;width:10px;height:1.5px;background:currentColor;transform:rotate(-45deg);transform-origin:left center}
+.arrow-icon::after{content:'';position:absolute;right:1px;top:1px;width:5px;height:5px;border-top:1.5px solid currentColor;border-right:1.5px solid currentColor}
