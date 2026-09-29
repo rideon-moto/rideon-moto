@@ -1,0 +1,11 @@
+RIDEON — Maquette Web V1
+
+Ouvrez index.html dans votre navigateur. Gardez tous les fichiers et sous-dossiers fournis ensemble.
+
+Site informationnel en français québécois, responsive, avec navigation mobile et les trois piliers Ride, Explore et Connect. La palette reprend les couleurs du UI Kit RIDEON et le logo vertical officiel est intégré sans modification. Les visuels des trois piliers sont des photographies générées pour cette maquette; leurs pictogrammes reprennent les icônes MaterialIcons utilisées dans l’app. Les marqueurs Ride, Groupes et Riders sont les SVG officiels du projet, livrés dans markers/.
+
+La capture réelle disponible dans le projet était en mode clair. Elle a été retirée de cette version pour respecter la demande de n’utiliser que le mode sombre pour les captures d’écran de l’app. Aucun écran de l’app n’est donc présenté ici.
+
+Le formulaire Contact transmet les messages à info@rideon-moto.com avec FormSubmit. Lors du premier envoi, FormSubmit demandera au propriétaire de confirmer l’adresse de réception. Une connexion Internet est nécessaire pour l’envoi, les polices Google Fonts et les badges officiels des boutiques. Les badges pointent temporairement vers les pages générales de l’App Store et Google Play; les fiches RIDEON n’étant pas encore disponibles, ils n’ouvrent pas une page de téléchargement RIDEON.
+
+Aucun compte Web ni backend RIDEON n’est inclus.
