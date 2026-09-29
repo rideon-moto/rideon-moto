@@ -53,5 +53,5 @@
 /* Match the visible artwork: Google's official PNG includes more internal whitespace. */
 .store-badge{display:flex;align-items:center;justify-content:center;width:auto;max-width:100%;height:70px;overflow:visible;flex:0 1 auto}
 .store-badge img{display:block;width:auto;height:52px;max-width:190px;max-height:100%;object-fit:contain}
-.store-badge:nth-of-type(2) img{height:69px}
-@media(max-width:760px){.store-badge{width:auto;height:70px}.store-badge img{height:52px;max-width:100%}.store-badge:nth-of-type(2) img{height:69px}}
+.store-badge:nth-of-type(2) img{height:75px}
+@media(max-width:760px){.store-badge{width:auto;height:70px}.store-badge img{height:52px;max-width:100%}.store-badge:nth-of-type(2) img{height:75px}}
