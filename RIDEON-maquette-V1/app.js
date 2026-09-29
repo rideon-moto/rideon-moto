@@ -74,7 +74,7 @@ const englishCopy = [
   ['.contact-form label[for="contact-message"]', 'Your message'],
   ['.contact-submit', 'Send message <span aria-hidden="true">↗</span>'],
   ['#form-status', 'This form sends your message to the RIDEON team.'],
-  ['.form-note', 'Form powered by FormSubmit; your message goes to info@rideon-moto.com.'],
+  ['.form-note', 'Form powered by FormSubmit; your message goes to hello@rideon-moto.com.'],
   ['footer > div > p', 'The road brings us together.'],
   ['.footer-bottom > span:nth-child(3)', 'V1 concept · Concept visuals']
 ];
@@ -183,7 +183,7 @@ if (contactForm) {
     status.textContent = currentLanguage === 'en' ? 'Sending…' : 'Envoi en cours…';
     try {
       const values = Object.fromEntries(new FormData(contactForm).entries());
-      const response = await fetch('https://formsubmit.co/ajax/info@rideon-moto.com', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(values) });
+      const response = await fetch('https://formsubmit.co/ajax/hello@rideon-moto.com', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(values) });
       const result = await response.json();
       if (!response.ok || !result.success) throw new Error('submit');
       status.dataset.state = 'success';
@@ -191,7 +191,7 @@ if (contactForm) {
       contactForm.reset();
     } catch {
       status.dataset.state = 'error';
-      status.textContent = currentLanguage === 'en' ? 'Your message could not be sent. Please try again or email info@rideon-moto.com.' : 'Le message n’a pas pu être envoyé. Réessayez ou écrivez-nous à info@rideon-moto.com.';
+      status.textContent = currentLanguage === 'en' ? 'Your message could not be sent. Please try again or email hello@rideon-moto.com.' : 'Le message n’a pas pu être envoyé. Réessayez ou écrivez-nous à hello@rideon-moto.com.';
     } finally { submit.disabled = false; }
   });
 }
