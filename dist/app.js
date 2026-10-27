@@ -31,7 +31,7 @@ const englishCopy = [
   ['#explore .feature-copy > p', 'One map. A thousand reasons to get out. Discover rides, groups and riders nearby. Find the stops that turn a ride into a memory.'],
   ['#explore .detail-row h3', 'Something new around every turn'],
   ['#explore .detail-row p', 'Inspiring routes, points of interest and local discoveries, all on one map.'],
-  ['#explore .feature-copy > .text-link', 'Want to go together? <span>↗</span>'],
+  ['#explore .feature-copy > .text-link', 'Want to go together? <span class="arrow-icon" aria-hidden="true"></span>'],
   ['#connect .feature-copy > h2', 'Your kind of ride.<br>Your kind of people.'],
   ['#connect .feature-copy > p', 'Riding together starts with a connection. Find riders who share your interests, style and pace with RIDEON Connect.'],
   ['#connect .feature-list li:nth-child(1) h3', 'Connections that go places'],
