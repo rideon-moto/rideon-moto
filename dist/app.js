@@ -72,7 +72,7 @@ const englishCopy = [
   ['.contact-form label[for="contact-name"]', 'Your name'],
   ['.contact-form label[for="contact-email"]', 'Your email'],
   ['.contact-form label[for="contact-message"]', 'Your message'],
-  ['.contact-submit', 'Send message <span class="arrow-icon" aria-hidden="true"></span>'],
+  ['.contact-submit', 'Send message'],
   ['#form-status', 'This form sends your message to the RIDEON team.'],
   ['.form-note', 'Form powered by FormSubmit; your message goes to hello@rideon-moto.com.'],
   ['footer > div > p', 'The road brings us together.'],
