@@ -64,7 +64,6 @@ const englishCopy = [
   ['#avenir > .eyebrow', 'THE ADVENTURE IS JUST BEGINNING'],
   ['#avenir > h2', 'Your next ride<br>starts <em>here.</em>'],
   ['#avenir > p', 'Ride. Explore. Connect.<br>A new way to live your motorcycle passion.'],
-  ['#avenir > small', 'RIDEON app listings will appear here when they’re live.'],
   ['#avenir > .text-link', 'Explore the app again'],
   ['.contact-copy > .eyebrow', 'LET’S TALK'],
   ['.contact-copy > h2', 'Have a question?<br><em>Get in touch.</em>'],
@@ -74,9 +73,7 @@ const englishCopy = [
   ['.contact-form label[for="contact-message"]', 'Your message'],
   ['.contact-submit', 'Send message'],
   ['#form-status', 'This form sends your message to the RIDEON team.'],
-  ['.form-note', 'Form powered by FormSubmit; your message goes to hello@rideon-moto.com.'],
   ['footer > div > p', 'The road brings us together.'],
-  ['.footer-bottom > span:nth-child(3)', 'V1 concept · Concept visuals']
 ];
 
 const originalMarkup = englishCopy.map(([selector]) => [document.querySelector(selector), document.querySelector(selector)?.innerHTML]);
