@@ -65,3 +65,7 @@ html[lang^="en"] .store-badge:nth-of-type(2) img{height:80px}
 
 
 .availability .arrow-icon{margin-left:15px!important}.contact-email .arrow-icon{vertical-align:middle;margin-left:8px!important}.text-link .arrow-icon{vertical-align:middle;margin-left:0!important}
+
+
+/* Use the supplied external-link artwork for the email link. */
+.contact-email .external-link-icon{display:inline-block;width:16px;height:16px;object-fit:contain;vertical-align:middle;margin-left:8px}
