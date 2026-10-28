@@ -11,8 +11,6 @@ const englishCopy = [
   ['.hero-content h1', 'Less routine.<br>More <em>riding.</em>'],
   ['.hero-content > p', 'The road. The world around you. The people to ride with.<br class="desktop"> Your motorcycle passion, all in one app.'],
   ['.hero-content .button', 'Discover RIDEON'],
-  ['.hero-bottom > span', 'FREEDOM STARTS AT THE NEXT TURN.'],
-  ['.hero-bottom > a', 'Explore the app'],
   ['#piliers > .eyebrow', 'THREE WAYS TO LIVE THE RIDE'],
   ['#piliers .intro-heading h2', 'One passion.<br>A whole world to explore.'],
   ['#piliers .intro-heading p', 'From the first route to the last coffee stop,<br>RIDEON brings it all together.'],
