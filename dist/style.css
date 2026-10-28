@@ -15,7 +15,7 @@
 
 .hero-real-screen{display:none!important}
 
-.form-note{font-size:11px;line-height:1.6;color:#9ca39b;margin:0}
+
 
 /* Editorial image treatment: photography becomes part of each pillar's layout. */
 .feature{grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);gap:clamp(44px,7vw,104px);padding-top:clamp(92px,10vw,138px);padding-bottom:clamp(92px,10vw,138px)}
