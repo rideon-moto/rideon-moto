@@ -50,11 +50,12 @@
 .header nav a[aria-current="location"]{color:var(--green)}
 .header nav a[aria-current="location"]:after{transform:scaleX(1)}
 
-/* Keep both official store marks at the same visible height on every screen. */
+/* Match visible artwork: the Google PNG has transparent vertical padding. */
 .store-links{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
-.store-badge{display:flex;align-items:center;justify-content:center;width:auto;max-width:100%;height:64px;overflow:visible;flex:0 1 auto}
+.store-badge{display:flex;align-items:center;justify-content:center;width:auto;max-width:100%;height:76px;overflow:visible;flex:0 1 auto}
 .store-badge img{display:block;width:auto;height:52px;max-width:190px;max-height:52px;object-fit:contain}
-@media(max-width:760px){.store-badge{height:64px}.store-badge img{height:52px;max-height:52px;max-width:100%}}
+.store-badge:nth-of-type(2) img{height:68px;max-height:none}
+@media(max-width:760px){.store-badge{height:76px}.store-badge img{height:52px;max-height:52px;max-width:100%}.store-badge:nth-of-type(2) img{height:68px;max-height:none;max-width:100%}}
 
 /* CSS-drawn arrows stay consistent across Safari and other browsers. */
 .arrow-icon{position:relative;display:inline-block!important;flex:0 0 14px;width:14px;height:14px;margin-left:0!important;font-size:0!important;line-height:0!important;color:currentColor}
