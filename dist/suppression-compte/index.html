@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#121212">
+<title>Suppression du compte et des données — RIDEON</title>
+<meta name="description" content="Étapes actuellement disponibles et limites connues du processus de suppression RIDEON.">
+<link rel="canonical" href="https://rideon-moto.com/suppression-compte/">
+<link rel="icon" type="image/svg+xml" href="../rideon-logo.svg">
+<link rel="stylesheet" href="../style.css?v=20261027-production-no-hero">
+<link rel="stylesheet" href="../legal.css">
+</head>
+<body data-title-fr="Suppression du compte et des données — RIDEON" data-title-en="Account and data deletion — RIDEON" data-description-fr="Étapes actuellement disponibles et limites connues du processus de suppression RIDEON." data-description-en="Currently available steps and known limits of RIDEON’s deletion process.">
+<a class="skip" href="#contenu" data-fr="Aller au contenu" data-en="Skip to content">Aller au contenu</a>
+<header class="header legal-header">
+<a class="logo" href="/" aria-label="RIDEON, accueil" data-aria-fr="RIDEON, accueil" data-aria-en="RIDEON, home"><img src="../rideon-logo.svg" alt="RIDEON" width="698" height="328.9"></a>
+<nav aria-label="Navigation principale" id="navigation">
+<a href="/#ride" data-fr="Ride" data-en="Ride">Ride</a>
+<a href="/#explore" data-fr="Explorer" data-en="Explore">Explorer</a>
+<a href="/#connect" data-fr="Connect" data-en="Connect">Connect</a>
+<a href="/#contact" data-fr="Contact" data-en="Contact">Contact</a>
+</nav>
+<a class="availability" href="/" data-fr="Retour au site" data-en="Back to RIDEON">Retour au site</a>
+<div class="language-switch" role="group" aria-label="Langue du site">
+<button type="button" lang="fr-CA" data-language="fr" aria-pressed="true" aria-label="Afficher en français">FR</button>
+<button type="button" lang="en-CA" data-language="en" aria-pressed="false" aria-label="Switch to English">EN</button>
+</div>
+<button class="menu" type="button" aria-expanded="false" aria-controls="navigation" aria-label="Ouvrir le menu"><span></span><span></span></button>
+</header>
+<main id="contenu" class="legal-main">
+<div class="legal-shell">
+<section class="legal-copy" lang="fr-CA" data-language-content="fr">
+<p class="legal-eyebrow">RIDEON · BÊTA</p>
+<h1>Suppression du compte et des données</h1>
+<p class="legal-intro">Étapes actuellement disponibles et limites connues du processus de suppression RIDEON.</p>
+<aside class="legal-review" aria-label="Avis de validation">
+<strong>Version de travail — validation requise</strong>
+<p>Cette page décrit l’implémentation examinée, mais n’a pas été approuvée juridiquement. Confirmez les renseignements signalés avant de la publier.</p>
+</aside>
+
+<h2>Depuis l’application</h2>
+<ol><li>Connectez-vous au compte concerné.</li><li>Ouvrez Paramètres, puis choisissez « Supprimer le compte ».</li><li>Lisez l’avertissement et saisissez le mot de confirmation demandé pour confirmer.</li></ol>
+<p>La demande est exécutée par le serveur après vérification de votre session. Si vous êtes propriétaire d’un groupe, la demande est refusée (409) : transférez d’abord la propriété du groupe. Ne transmettez jamais votre mot de passe par courriel.</p>
+<h2>Ce que fait le flux actuel</h2>
+<p>Le code de suppression examiné supprime les enregistrements personnels pris en charge, notamment profil, memberships, abonnements, blocages, notifications, contenu social, préférences Connect, progression, rides, points GPS, médias personnels et éléments liés aux rides; l’utilisateur Auth est supprimé après confirmation serveur. Les éléments du catalogue public et badges non détenus ne sont pas supprimés. Des données optionnelles absentes d’un déploiement peuvent être ignorées; une autre erreur peut interrompre la procédure. Si le serveur indique que la suppression est en attente ou échoue, l’application ne présente pas la demande comme terminée et certaines données peuvent déjà avoir été retirées.</p>
+<h2>Si vous n’avez plus accès au compte</h2>
+<p>Écrivez à <a href="mailto:hello@rideon-moto.com">hello@rideon-moto.com</a> pour demander de l’aide et permettre la vérification raisonnable de votre identité. La procédure manuelle, les délais et les règles applicables aux sauvegardes ou données conservées par les fournisseurs doivent être confirmés avant publication. Aucun délai de suppression n’est promis sur cette page.</p>
+<h2>À savoir</h2>
+<p>La suppression du compte est une action irréversible lorsqu’elle est confirmée. Exportez ou sauvegardez les informations que vous souhaitez garder avant de commencer. Pour éviter une perte, traitez d’abord les rides ou synchronisations en attente affichées dans l’application.</p>
+
+<p class="legal-contact">Une question? <a href="/support/">Contacter l’assistance</a>.</p>
+</section>
+<section class="legal-copy" lang="en-CA" data-language-content="en" hidden>
+<p class="legal-eyebrow">RIDEON · BETA</p>
+<h1>Account and data deletion</h1>
+<p class="legal-intro">Currently available steps and known limits of RIDEON’s deletion process.</p>
+<aside class="legal-review" aria-label="Review notice">
+<strong>Working draft — review required</strong>
+<p>This page describes the implementation reviewed but has not received legal approval. Confirm the flagged details before publication.</p>
+</aside>
+
+<h2>In the app</h2>
+<ol><li>Sign in to the account you want to delete.</li><li>Open Settings and choose “Delete account”.</li><li>Read the warning and enter the confirmation word requested to confirm.</li></ol>
+<p>The request is processed by the server after your session is checked. If you own a group, the request is refused (409): transfer group ownership first. Never email your password.</p>
+<h2>What the current flow does</h2>
+<p>The deletion code reviewed removes supported personal records, including profile, memberships, follows, blocks, notifications, social content, Connect preferences, progress, rides, GPS points, personal media and ride-related records; the Auth user is deleted after server confirmation. Public catalogue items and badges not owned by the account are not deleted. Optional data absent from a deployment may be skipped; another error can interrupt the process. If the server reports that deletion is pending or fails, the app does not present the request as complete, and some data may already have been removed.</p>
+<h2>If you cannot access your account</h2>
+<p>Email <a href="mailto:hello@rideon-moto.com">hello@rideon-moto.com</a> for help and reasonable identity verification. The manual process, timeframes and rules for backups or information held by providers must be confirmed before publication. This page does not promise a deletion timeframe.</p>
+<h2>Before you begin</h2>
+<p>Confirmed account deletion is irreversible. Export or save information you want to keep first. To avoid loss, resolve pending rides or sync operations shown in the app before starting.</p>
+
+<p class="legal-contact">Questions? <a href="/support/">Contact support</a>.</p>
+</section>
+</div>
+</main>
+<footer class="wrap legal-footer">
+<div><a class="logo" href="/" aria-label="RIDEON, accueil" data-aria-fr="RIDEON, accueil" data-aria-en="RIDEON, home"><img src="../rideon-logo.svg" alt="RIDEON" width="698" height="328.9"></a><p data-fr="La route nous rassemble." data-en="The road brings us together.">La route nous rassemble.</p></div>
+<nav aria-label="Navigation de bas de page">
+<a href="/confidentialite/" data-fr="Confidentialité" data-en="Privacy">Confidentialité</a>
+<a href="/conditions/" data-fr="Conditions" data-en="Terms">Conditions</a>
+<a href="/support/" data-fr="Assistance" data-en="Support">Assistance</a>
+<a href="/suppression-compte/" data-fr="Suppression du compte" data-en="Account deletion">Suppression du compte</a>
+</nav>
+<div class="legal-footer-contact"><a href="mailto:hello@rideon-moto.com">hello@rideon-moto.com</a><a href="/">RIDEON</a></div>
+<div class="footer-bottom"><span>© 2026 RIDEON</span><span>Ride. Explore. Connect.</span></div>
+</footer>
+<script src="../legal.js" defer></script>
+</body>
+</html>
