@@ -72,6 +72,10 @@ const englishCopy = [
   ['.contact-submit', 'Send message'],
   ['#form-status', 'This form sends your message to the RIDEON team.'],
   ['footer > div > p', 'The road brings us together.'],
+  ['.footer-legal-links a:nth-child(1)', 'Privacy'],
+  ['.footer-legal-links a:nth-child(2)', 'Terms'],
+  ['.footer-legal-links a:nth-child(3)', 'Support'],
+  ['.footer-legal-links a:nth-child(4)', 'Account deletion'],
 ];
 
 const originalMarkup = englishCopy.map(([selector]) => [document.querySelector(selector), document.querySelector(selector)?.innerHTML]);
@@ -90,7 +94,8 @@ const englishAttributes = [
   ['#avenir .store-badge:nth-child(1) img', 'alt', 'Download on the App Store'],
   ['#avenir .store-badge:nth-child(2) img', 'alt', 'Get it on Google Play'],
   ['.language-switch', 'aria-label', 'Site language'],
-  ['footer nav', 'aria-label', 'Footer navigation']
+  ['footer nav:not(.footer-legal-links)', 'aria-label', 'Footer navigation'],
+  ['.footer-legal-links', 'aria-label', 'Legal and support links']
 ];
 const originalAttributes = englishAttributes.flatMap(([selector, name]) => [...document.querySelectorAll(selector)].map(element => [element, name, element.getAttribute(name)]));
 const originalPlaceholders = [

@@ -68,3 +68,6 @@ html[lang^="en"] .store-badge:nth-of-type(2) img{height:80px}
 @media(max-width:760px){footer>div:first-child{width:100%;text-align:center}footer>div:first-child .logo{justify-content:center}footer>div:first-child p{text-align:center}}
 
 @media(max-width:760px){footer nav{width:100%;justify-content:center;flex-wrap:wrap}}
+
+
+.footer-legal-links{display:flex;gap:9px 18px;flex-wrap:wrap;align-content:flex-start}.footer-legal-links a{white-space:nowrap}@media(max-width:760px){footer .footer-legal-links{order:2;width:100%;justify-content:center}}

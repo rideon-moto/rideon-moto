@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#121212">
+<title>Suppression du compte et des données — RIDEON</title>
+<meta name="description" content="Étapes actuellement disponibles et limites connues du processus de suppression RIDEON.">
+<link rel="canonical" href="https://rideon-moto.com/suppression-compte/">
+<link rel="icon" type="image/svg+xml" href="../rideon-logo.svg">
+<link rel="stylesheet" href="../style.css?v=20261027-production-no-hero">
+<link rel="stylesheet" href="../legal.css">
+</head>
+<body data-title-fr="Suppression du compte et des données — RIDEON" data-title-en="Account and data deletion — RIDEON" data-description-fr="Étapes actuellement disponibles et limites connues du processus de suppression RIDEON." data-description-en="Currently available steps and known limits of RIDEON’s deletion process.">
+<a class="skip" href="#contenu" data-fr="Aller au contenu" data-en="Skip to content">Aller au contenu</a>
+<header class="header legal-header">
+<a class="logo" href="/" aria-label="RIDEON, accueil" data-aria-fr="RIDEON, accueil" data-aria-en="RIDEON, home"><img src="../rideon-logo.svg" alt="RIDEON" width="698" height="328.9"></a>
+<nav aria-label="Navigation principale" id="navigation">
+<a href="/#ride" data-fr="Ride" data-en="Ride">Ride</a>
+<a href="/#explore" data-fr="Explorer" data-en="Explore">Explorer</a>
+<a href="/#connect" data-fr="Connect" data-en="Connect">Connect</a>
+<a href="/#contact" data-fr="Contact" data-en="Contact">Contact</a>
+</nav>
+<a class="availability" href="/" data-fr="Retour au site" data-en="Back to RIDEON">Retour au site</a>
+<div class="language-switch" role="group" aria-label="Langue du site">
+<button type="button" lang="fr-CA" data-language="fr" aria-pressed="true" aria-label="Afficher en français">FR</button>
+<button type="button" lang="en-CA" data-language="en" aria-pressed="false" aria-label="Switch to English">EN</button>
+</div>
+<button class="menu" type="button" aria-expanded="false" aria-controls="navigation" aria-label="Ouvrir le menu"><span></span><span></span></button>
+</header>
+<main id="contenu" class="legal-main">
+<div class="legal-shell">
+<section class="legal-copy" lang="fr-CA" data-language-content="fr">
+<p class="legal-eyebrow">RIDEON · BÊTA</p>
+<h1>Suppression du compte et des données</h1>
+<p class="legal-intro">Étapes actuellement disponibles et limites connues du processus de suppression RIDEON.</p>
+<aside class="legal-review" aria-label="Avis de validation">
+<strong>Version de travail — validation requise</strong>
+<p>Cette page décrit l’implémentation examinée, mais n’a pas été approuvée juridiquement. Confirmez les renseignements signalés avant de la publier.</p>
+</aside>
+<p class="legal-operator"><strong>Exploitant et responsable de la protection des renseignements personnels :</strong> Xavier Armstrong, personne physique exploitant le service sous le nom commercial RIDEON. Territoire : Québec, Canada. Adresse postale : 257 rue du Merle, Sainte-Marguerite, QC, Canada G0S 2X0. Contact : <a href="mailto:hello@rideon-moto.com">hello@rideon-moto.com</a>.</p>
+
+<h2>Depuis l’application</h2>
+<ol><li>Connectez-vous au compte concerné.</li><li>Ouvrez Paramètres, puis choisissez « Supprimer le compte ».</li><li>Lisez l’avertissement et saisissez le mot de confirmation demandé pour confirmer.</li></ol>
+<p>Le serveur traite la demande après vérification de votre session et de la confirmation demandée. Si vous êtes propriétaire d’un groupe, la demande est refusée (409) avant le début de la suppression; aucun transfert dans l’application n’a été vérifié et aucun groupe partagé n’est supprimé automatiquement. Écrivez à l’assistance pour demander un examen, sans garantie de transfert. Ne transmettez jamais votre mot de passe, code ou jeton par courriel. Cette demande ne remplace pas les demandes écrites d’accès ou de rectification.</p>
+<h2>Ce que fait le flux actuel</h2>
+<p>Le parcours actuellement déployé supprime les données personnelles et médias pris en charge, puis le compte Auth. Les catalogues publics et badges qui ne sont pas détenus par le compte ne sont pas supprimés. Des tables optionnelles connues comme absentes peuvent être ignorées; toute autre erreur peut interrompre le parcours après des suppressions partielles, et seul le résultat terminal du serveur permet à l’application de confirmer le succès. Lorsque le compte Auth est supprimé, la migration P7-03 appliquée anonymise et annule ses Meets individuels : séries et occurrences sont annulées, les textes et lieux sont remplacés ou effacés, les coordonnées sont neutralisées, les RSVPs « going » sont annulés et les notifications Meet en attente ou en cours sont invalidées. Les Meets organisés par un groupe sont conservés comme événements du groupe, avec l’attribution au compte supprimé retirée. Des reçus limités de notifications déjà envoyées peuvent subsister; leur durée n’est pas établie. Si le compte est propriétaire d’un groupe, la demande est refusée (HTTP 409) avant le début de la suppression. Il faut régler la propriété du groupe avant de réessayer; aucun transfert intégré n’est disponible ou vérifié. Les 11 fichiers Storage ont une copie locale vérifiée par SHA-256, mais la restauration via l’API Storage n’a pas été testée; les durées d’expiration des sauvegardes et le processus manuel de demande restent à formaliser.</p>
+<h2>Demande par courriel ou par la poste</h2>
+<p>Si vous ne pouvez pas utiliser le parcours intégré, écrivez à <a href="mailto:hello@rideon-moto.com">hello@rideon-moto.com</a> ou à Xavier Armstrong, 257 rue du Merle, Sainte-Marguerite, QC, Canada G0S 2X0. Le courriel est un canal de contact, pas une procédure complète de suppression : l’identité doit être vérifiée de façon proportionnée, mais la méthode et le suivi ne sont pas encore formalisés. Ne joignez pas de pièce d’identité, mot de passe, jeton ni historique GPS précis. Pour un compte propriétaire d’un groupe, aucune suppression/transfert manuel ne doit être supposé ou effectué sans examen et autorisation documentés. Aucun délai de traitement ou d’effacement des sauvegardes n’est confirmé.</p>
+<h2>À savoir</h2>
+<p>La suppression du compte est une action irréversible lorsqu’elle est confirmée. Exportez ou sauvegardez les informations que vous souhaitez garder avant de commencer. Pour éviter une perte, traitez d’abord les rides ou synchronisations en attente affichées dans l’application.</p>
+
+<p class="legal-contact">Une question? <a href="/support/">Contacter l’assistance</a>.</p>
+</section>
+<section class="legal-copy" lang="en-CA" data-language-content="en" hidden>
+<p class="legal-eyebrow">RIDEON · BETA</p>
+<h1>Account and data deletion</h1>
+<p class="legal-intro">Currently available steps and known limits of RIDEON’s deletion process.</p>
+<aside class="legal-review" aria-label="Review notice">
+<strong>Working draft — review required</strong>
+<p>This page describes the implementation reviewed but has not received legal approval. Confirm the flagged details before publication.</p>
+</aside>
+<p class="legal-operator"><strong>Service operator and person responsible for personal information protection:</strong> Xavier Armstrong, an individual operating the service under the trade name RIDEON. Territory: Quebec, Canada. Mailing address: 257 rue du Merle, Sainte-Marguerite, QC, Canada G0S 2X0. Contact: <a href="mailto:hello@rideon-moto.com">hello@rideon-moto.com</a>.</p>
+
+<h2>In the app</h2>
+<ol><li>Sign in to the account you want to delete.</li><li>Open Settings and choose “Delete account”.</li><li>Read the warning and enter the confirmation word requested to confirm.</li></ol>
+<p>The server handles the request after checking your session and required confirmation. If you own a group, deletion is refused (409) before deletion starts; no in-app transfer has been verified, and a shared group is not automatically deleted. Email support to ask for a review; transfer is not guaranteed. Never email a password, code or token. This request does not replace written access or correction requests.</p>
+<h2>What the current flow does</h2>
+<p>The currently deployed flow deletes supported personal records and media, then the Auth account. Public catalog rows and badges not owned by the account are not deleted. Known absent optional tables may be skipped; another error can interrupt the flow after partial deletions, and the app reports success only after the server’s terminal result. When the Auth account is deleted, the applied P7-03 migration anonymizes and cancels its individually organized Meets: series and occurrences are cancelled, text and locations are replaced or cleared, coordinates are neutralized, “going” RSVPs are cancelled, and pending or processing Meet notifications are invalidated. Group-organized Meets remain as group events, with attribution to the deleted account removed. Limited receipts for notifications already sent may remain; their retention period is not established. If the account owns a group, deletion is refused (HTTP 409) before it starts. Group ownership must be resolved before retrying; no in-app transfer is available or verified. The 11 Storage files have local SHA-256-verified copies, but restoration through the Storage API has not been tested; backup expiry and the manual request process remain to be formalized.</p>
+<h2>Requests by email or mail</h2>
+<p>If you cannot use the in-app flow, write to <a href="mailto:hello@rideon-moto.com">hello@rideon-moto.com</a> or Xavier Armstrong, 257 rue du Merle, Sainte-Marguerite, QC, Canada G0S 2X0. Email is a contact channel, not a complete deletion procedure: identity must be checked proportionately, but the method and tracking are not formalized. Do not attach identity documents or send passwords, tokens or precise GPS history. For group owners, do not assume or perform a manual transfer/deletion without documented review and authorization. No processing or backup-erasure timeframe is confirmed.</p>
+<h2>Before you begin</h2>
+<p>Confirmed account deletion is irreversible. Export or save information you want to keep first. To avoid loss, resolve pending rides or sync operations shown in the app before starting.</p>
+
+<p class="legal-contact">Questions? <a href="/support/">Contact support</a>.</p>
+</section>
+</div>
+</main>
+<footer class="wrap legal-footer">
+<div><a class="logo" href="/" aria-label="RIDEON, accueil" data-aria-fr="RIDEON, accueil" data-aria-en="RIDEON, home"><img src="../rideon-logo.svg" alt="RIDEON" width="698" height="328.9"></a><p data-fr="La route nous rassemble." data-en="The road brings us together.">La route nous rassemble.</p></div>
+<nav aria-label="Navigation de bas de page">
+<a href="/confidentialite/" data-fr="Confidentialité" data-en="Privacy">Confidentialité</a>
+<a href="/conditions/" data-fr="Conditions" data-en="Terms">Conditions</a>
+<a href="/support/" data-fr="Assistance" data-en="Support">Assistance</a>
+<a href="/suppression-compte/" data-fr="Suppression du compte" data-en="Account deletion">Suppression du compte</a>
+</nav>
+<div class="legal-footer-contact"><a href="mailto:hello@rideon-moto.com">hello@rideon-moto.com</a><a href="/">RIDEON</a></div>
+<div class="footer-bottom"><span>© 2026 RIDEON</span><span>Ride. Explore. Connect.</span></div>
+</footer>
+<script src="../legal.js" defer></script>
+</body>
+</html>
