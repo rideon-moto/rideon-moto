@@ -5,7 +5,8 @@ let currentLanguage = 'fr';
 
 const englishCopy = [
   ['.skip', 'Skip to content'],
-  ['#navigation a:nth-child(4)', 'The app'],
+  ['#navigation a[href="#meet"]', 'Meet'],
+  ['#navigation a[href="#fonctionnalites"]', 'The app'],
   ['.availability', 'Coming soon'],
   ['.hero-content .eyebrow', '<span class="short-line"></span> THE ROAD IS CALLING'],
   ['.hero-content h1', 'Less routine.<br>More <em>riding.</em>'],
@@ -36,6 +37,17 @@ const englishCopy = [
   ['#connect .feature-list li:nth-child(1) p', 'Match with riders who could become your next road partners.'],
   ['#connect .feature-list li:nth-child(2) h3', 'Room for your crew'],
   ['#connect .feature-list li:nth-child(2) p', 'Join groups, chat and plan the next ride.'],
+  ['#meet-title', 'PASSION BRINGS US TOGETHER.'],
+  ['#meet-description', 'Discover motorcycle meet-ups near you, organize your own events and find riders who share your passion for the road.'],
+  ['#meet-cta', 'Discover Rideon Meet'],
+  ['#meet-feature-title-1', 'Discover events'],
+  ['#meet-feature-copy-1', 'Explore motorcycle gatherings, meet-ups and activities near you.'],
+  ['#meet-feature-title-2', 'Organize your Meet'],
+  ['#meet-feature-copy-2', 'Create an event, choose a place and date, and bring riders together.'],
+  ['#meet-feature-title-3', 'Join the community'],
+  ['#meet-feature-copy-3', 'Check event details and join the meet-ups that interest you.'],
+  ['#meet-feature-title-4', 'Connect your adventures'],
+  ['#meet-feature-copy-4', 'Bring meet-ups together with RIDEON rides and groups to keep the experience going.'],
   ['#fonctionnalites > .eyebrow', 'MORE THAN A ROUTE'],
   ['#fonctionnalites .intro-heading h2', 'Everything that makes<br>you a rider.'],
   ['#fonctionnalites .intro-heading p', 'The right details, right where you need them.<br>So you can focus on the ride.'],
@@ -69,13 +81,7 @@ const englishCopy = [
   ['.contact-form label[for="contact-name"]', 'Your name'],
   ['.contact-form label[for="contact-email"]', 'Your email'],
   ['.contact-form label[for="contact-message"]', 'Your message'],
-  ['.contact-submit', 'Send message'],
-  ['#form-status', 'This form sends your message to the RIDEON team.'],
-  ['footer > div > p', 'The road brings us together.'],
-  ['.footer-legal-links a:nth-child(1)', 'Privacy'],
-  ['.footer-legal-links a:nth-child(2)', 'Terms'],
-  ['.footer-legal-links a:nth-child(3)', 'Support'],
-  ['.footer-legal-links a:nth-child(4)', 'Account deletion'],
+  ['.contact-submit', 'Send message'],  ['footer > div > p', 'The road brings us together.'],
 ];
 
 const originalMarkup = englishCopy.map(([selector]) => [document.querySelector(selector), document.querySelector(selector)?.innerHTML]);
@@ -94,8 +100,15 @@ const englishAttributes = [
   ['#avenir .store-badge:nth-child(1) img', 'alt', 'Download on the App Store'],
   ['#avenir .store-badge:nth-child(2) img', 'alt', 'Get it on Google Play'],
   ['.language-switch', 'aria-label', 'Site language'],
+  ['#meet-photo', 'aria-label', 'Motorcycle meet-up near a cafe in Quebec'],
+  ['#meet-picture', 'alt', 'Motorcyclists gathered near a cafe in Quebec'],
+  ['#meet-features', 'aria-label', 'Rideon Meet features'],
   ['footer nav:not(.footer-legal-links)', 'aria-label', 'Footer navigation'],
-  ['.footer-legal-links', 'aria-label', 'Legal and support links']
+  ['.footer-legal-links', 'aria-label', 'Legal and support links'],
+  ['.footer-legal-links a:nth-child(1)', 'Privacy'],
+  ['.footer-legal-links a:nth-child(2)', 'Terms'],
+  ['.footer-legal-links a:nth-child(3)', 'Support'],
+  ['.footer-legal-links a:nth-child(4)', 'Account deletion']
 ];
 const originalAttributes = englishAttributes.flatMap(([selector, name]) => [...document.querySelectorAll(selector)].map(element => [element, name, element.getAttribute(name)]));
 const originalPlaceholders = [
@@ -112,6 +125,22 @@ const frenchAppleBadge = 'https://tools.applemediaservices.com/api/badges/downlo
 const englishAppleBadge = 'https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg';
 const frenchPlayBadge = 'https://play.google.com/intl/fr_ca/badges/static/images/badges/fr_badge_web_generic.png';
 const englishPlayBadge = 'https://play.google.com/intl/en_ca/badges/static/images/badges/en_badge_web_generic.png';
+
+const meetRevealElements = [...document.querySelectorAll('.meet-reveal')];
+if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.documentElement.classList.add('meet-reveal-ready');
+  const meetRevealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        meetRevealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -28px 0px' });
+  meetRevealElements.forEach(element => meetRevealObserver.observe(element));
+} else {
+  meetRevealElements.forEach(element => element.classList.add('is-visible'));
+}
 
 function setLanguage(language, persist = true) {
   currentLanguage = language === 'en' ? 'en' : 'fr';
