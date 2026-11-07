@@ -82,6 +82,10 @@ const englishCopy = [
   ['.contact-form label[for="contact-email"]', 'Your email'],
   ['.contact-form label[for="contact-message"]', 'Your message'],
   ['.contact-submit', 'Send message'],  ['footer > div > p', 'The road brings us together.'],
+  ['.footer-legal-links a:nth-child(1)', 'Privacy'],
+  ['.footer-legal-links a:nth-child(2)', 'Terms'],
+  ['.footer-legal-links a:nth-child(3)', 'Support'],
+  ['.footer-legal-links a:nth-child(4)', 'Account deletion'],
 ];
 
 const originalMarkup = englishCopy.map(([selector]) => [document.querySelector(selector), document.querySelector(selector)?.innerHTML]);
@@ -104,11 +108,7 @@ const englishAttributes = [
   ['#meet-picture', 'alt', 'Motorcyclists gathered near a cafe in Quebec'],
   ['#meet-features', 'aria-label', 'Rideon Meet features'],
   ['footer nav:not(.footer-legal-links)', 'aria-label', 'Footer navigation'],
-  ['.footer-legal-links', 'aria-label', 'Legal and support links'],
-  ['.footer-legal-links a:nth-child(1)', 'Privacy'],
-  ['.footer-legal-links a:nth-child(2)', 'Terms'],
-  ['.footer-legal-links a:nth-child(3)', 'Support'],
-  ['.footer-legal-links a:nth-child(4)', 'Account deletion']
+  ['.footer-legal-links', 'aria-label', 'Legal and support links']
 ];
 const originalAttributes = englishAttributes.flatMap(([selector, name]) => [...document.querySelectorAll(selector)].map(element => [element, name, element.getAttribute(name)]));
 const originalPlaceholders = [
