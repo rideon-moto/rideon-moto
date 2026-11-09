@@ -72,6 +72,6 @@ Consultées le 8 novembre 2026 : [Loi sur le privé, version officielle](https:/
 ## Décision et traçabilité
 **GO pour soumettre les quatre brouillons à l’approbation humaine. NO-GO publication.** Il manque les confirmations du tableau, les procédures opérationnelles (dont groupe/suppression), la validation juridique et la qualification/décision distincte du contrôle 18+ avant de le décrire comme actif.
 
-Révision depuis le head `1e7afb672e166a4edf49cfcd82e78bbf8e7fa6e0`. Commits des pages : `765bb1c4`, `741c6133`, `469f5c33`, `2047b0a1`, puis correction du lien CAI `7b0a1624`. Lecture après écriture requise pour confirmer que les quatre fichiers distants correspondent aux fichiers testés.
+Révision depuis le head `1e7afb672e166a4edf49cfcd82e78bbf8e7fa6e0`. Commits des pages : `765bb1c4`, `741c6133`, `469f5c33`, `2047b0a1`, puis correction du lien CAI `7b0a1624`. Lecture après écriture effectuée : les quatre fichiers distants correspondent exactement aux fichiers testés. Le dernier rejeu Web après correction du lien CAI confirme 24/24 PASS; les 13 URL internes restent valides. Rapport distant également relu et comparé.
 
 Aucune fusion, publication de production, migration/déploiement Supabase, modification Android, installation APK ni suppression de données. Les changements distants se limitent à la branche de PR et à sa description.
