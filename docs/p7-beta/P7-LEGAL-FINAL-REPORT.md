@@ -1,27 +1,69 @@
-# RIDEON — P7-LEGAL-FINAL
-Date : 8 novembre 2026 (Québec)  
-**Livraison éditoriale : terminée pour revue. Publication : NO-GO.**  
-PR : [rideon-moto/rideon-moto#1](https://github.com/rideon-moto/rideon-moto/pull/1) — branche `p7-02-legal-support-pages`.
+# RIDEON — P7-LEGAL-FINAL / P7-LEGAL-APPROVAL
+Mise à jour : 8 novembre 2026 (Québec)  
+PR : [rideon-moto/rideon-moto#1](https://github.com/rideon-moto/rideon-moto/pull/1) — `p7-02-legal-support-pages`.
 
-## Portée et résultat
-Les quatre pages ont été révisées en français québécois et en anglais équivalent :
-- `confidentialite/index.html` : compte, localisation, Connect/Match, visibilité des images publiques, fournisseurs constatés, limites de conservation et de suppression.
-- `conditions/index.html` : politique cible 18+, limites des suggestions Connect/Match, conduite et événements; aucun engagement de disponibilité ni clause de responsabilité inventée.
-- `support/index.html` : contact, minimisation des renseignements, absence de délai garanti; liens directs vers confidentialité et suppression.
-- `suppression-compte/index.html` : étapes, refus propriétaire de groupe, traitement partiel possible, données partagées et sauvegardes; aucune promesse d’effacement immédiat.
+**Décisions intégrées : PASS éditorial / PARTIEL opérationnel. Tests Web : PASS.**  
+**PR prête pour approbation finale : NON. Prête pour revue finale des brouillons : OUI. Publication : NO-GO.**
 
-Avis « Version de travail — validation requise / Working draft — review required » conservés. Les anciennes cibles de conservation 30/90 jours, 24 mois et 90 jours de sauvegardes ont été retirées des pages : elles ne prouvaient aucune pratique appliquée. Les détails de restauration et de copies Storage, destinés aux audits techniques, restent dans les rapports antérieurs plutôt que dans le parcours utilisateur.
+Ce rapport unique remplace la liste de décisions à obtenir du précédent P7-LEGAL-FINAL. Les décisions du propriétaire sont acquises; seules les validations décrites ci-dessous restent ouvertes. Aucun nouvel audit global ni contrôle Android/SQL n’a été entrepris.
 
-L’identité et les coordonnées déjà présentes sont conservées sur la base de la confirmation du propriétaire consignée en P7-07; aucune nouvelle vérification de registre, de mandat ou de boîte courriel n’a été faite.
+## Décisions du propriétaire intégrées
+« PASS » signifie que la décision est intégrée dans son périmètre documentaire. « PARTIEL » distingue l’intégration achevée d’une validation juridique ou opérationnelle encore nécessaire; ce statut ne demande pas au propriétaire de reprendre sa décision.
 
-## Vérification factuelle ciblée
+| Nº | Décision confirmée et intégration | Statut |
+|---|---|---|
+| 1 | Xavier Armstrong exploite RIDEON en nom personnel, sous le nom commercial RIDEON. Formulation conservée et harmonisée dans les quatre pages FR/EN. | PASS |
+| 2 | Xavier Armstrong est responsable de la protection des renseignements personnels. Identifié ainsi dans les quatre pages FR/EN. | PASS |
+| 3 | Contact public unique : hello@rideon-moto.com. Adresse personnelle retirée des quatre pages, y compris les coordonnées secondaires d’Assistance et le parcours postal de suppression. La conformité juridique d’un contact public uniquement par courriel reste à valider. | PASS éditorial; validation juridique ouverte |
+| 4 | Avatars et photos moto destinés à être publics : URL publiques acceptées; lecture possible par toute personne possédant le lien. Les contenus privés doivent rester protégés. Confidentialité décrit cette exigence et précise que la protection de tous les parcours privés n’est pas démontrée par cette décision. | PARTIEL opérationnel |
+| 5 | Fournisseurs externes et traitements hors Québec acceptés sous réserve des protections et vérifications applicables. Confidentialité intègre l’acceptation de l’exploitant sans inventer régions, ententes ou EFVP réalisées. Cette acceptation ne vaut pas consentement des utilisateurs. | PARTIEL juridique/opérationnel |
+| 6 | Conservation pendant la durée nécessaire au fonctionnement du compte, puis suppression ou anonymisation à la fermeture, avec exceptions justifiées. Principe intégré en Confidentialité et Suppression, séparé de sa mise en œuvre encore partielle. Aucun délai chiffré, effacement immédiat ou expiration de sauvegarde annoncé. | PARTIEL opérationnel |
+| 7 | Le propriétaire d’un groupe doit transférer la propriété ou supprimer son groupe avant de supprimer son compte. Règle intégrée aux quatre pages selon leur rôle. Refus 409 conservé; transfert intégré et voie de résolution non présentés comme vérifiés. | PARTIEL opérationnel |
+| 8 | RIDEON réservé aux 18 ans et plus, avec auto-déclaration à l’inscription. Même formulation FR/EN sur les quatre pages : politique approuvée, contrôle technique en préparation et non déployé, aucune certification d’âge ou d’identité. | PASS éditorial; contrôle opérationnel non déployé |
+| 9 | Tous les comptes existants sont des comptes de test, selon le propriétaire. Leur suppression avant bêta est autorisée sur le principe uniquement. Décision consignée ici; aucune suppression effective autorisée ou effectuée dans cette intervention. | PASS documentaire |
+| 10 | Aucune migration d’anciens comptes à développer uniquement pour préserver les comptes de test. Aucun chantier de migration ni exigence de conservation de ces comptes ajouté. | PASS |
+
+Les décisions 9 et 10 relèvent de la préparation interne de la bêta : elles ne sont pas ajoutées aux pages destinées aux utilisateurs comme une action réalisée ou un traitement de leurs futurs comptes.
+
+## Pages révisées
+- `confidentialite/index.html` : identité/contact, politique 18+, images publiques et exigence de protection privée, acceptation conditionnelle des fournisseurs/hors Québec, conservation et préalable groupe.
+- `conditions/index.html` : identité/contact, politique d’âge approuvée et contrôle non déployé, préalable groupe avec lien vers Suppression. Retrait de la demande devenue inutile de reconfirmer la règle d’admissibilité.
+- `support/index.html` : contact unique sans adresse personnelle, âge et aide au propriétaire de groupe sans garantie de transfert manuel.
+- `suppression-compte/index.html` : retrait de l’adresse et du canal postal, préalable groupe, principe de conservation et limites du flux réel.
+
+Versions FR/EN équivalentes, avertissements de brouillon conservés. CSS, JavaScript produit, Android et Supabase inchangés.
+
+## Seules validations encore bloquantes
+Ces points reprennent les réserves existantes et ne créent pas de nouvel audit.
+
+1. **Validation juridique finale des pages.** Confirmer que le courriel seul satisfait aux coordonnées publiques exigées dans le contexte de RIDEON; si une adresse doit être publiée, faire approuver une solution appropriée sans réafficher automatiquement l’adresse personnelle. Valider les clauses finales de modération/contenus, responsabilité et événements, loi applicable et différends. L’identité, le responsable et l’âge minimum ne sont plus des questions à trancher.
+2. **Mise en œuvre de la conservation et des demandes.** Préciser les exceptions justifiées par catégorie et le traitement des contenus partagés, journaux, diagnostics, support, reçus et sauvegardes; formaliser réception, vérification proportionnée, suivi des droits/plaintes/incidents et reprise d’une suppression partielle. Confirmer une voie réalisable pour le préalable transfert/suppression de groupe. La règle produit est décidée; la disponibilité du parcours reste à établir.
+3. **Fournisseurs et flux réels.** Compléter les lieux, sous-traitants, garanties/ententes et EFVP applicables déjà demandés; confirmer les paramètres réels de Firebase/Sentry du build. L’acceptation de principe des fournisseurs et du hors Québec est acquise et ne prouve pas que ces vérifications sont terminées.
+4. **Concordance du produit avant bêta.** Réutiliser la qualification technique distincte du contrôle 18+; ne le décrire comme actif qu’après preuve de déploiement. Confirmer les protections des contenus privés et l’information/consentement de localisation du build visé. La date de naissance Connect exige encore une description approuvée de ses finalités, accès, minimisation et conservation. Aucun nouveau contrôle applicatif n’a été exécuté ici.
+
+La livraison push Meet n’est pas garantie par les pages; sa qualification ne bloque pas à elle seule l’approbation éditoriale tant que cette réserve demeure exacte. Le nettoyage des comptes de test reste une opération future séparée nécessitant une autorisation d’exécution explicite; aucune migration de préservation n’est exigée.
+
+## Tests Web ciblés — P7-LEGAL-APPROVAL
+**PASS.** Seuls les quatre fichiers HTML modifiés ont été retestés, avec le script Playwright existant adapté au même périmètre.
+- **24/24 PASS** : quatre pages × FR/EN × 375/768/1440 px; HTTP 200, langue visible et attribut HTML, avis de brouillon, absence de débordement horizontal/titre, ressources internes et absence d’erreur JavaScript.
+- **13 URL internes distinctes : PASS**, routes et ancres; menu mobile, fermeture Échap et persistance de l’anglais après navigation.
+- `node --check legal.js` : PASS; aucun changement JavaScript nécessaire.
+- Recherche ciblée : aucune adresse personnelle, ancien code postal ou instruction de demande postale dans les quatre pages révisées; mailto public conservé.
+- Captures générées; Confidentialité mobile FR et Suppression ordinateur EN examinées visuellement : marque noire/verte et avis conservés, aucun défaut de mise en page observé.
+- Lecture GitHub après écriture : les quatre pages correspondent exactement aux fichiers testés.
+- Preuves locales : `.temp/p7-legal-approval-browser-results.json`, `.temp/p7-legal-approval-links-results.json`, `.temp/p7-legal-approval-screenshots/`; script dérivé `.temp/p7-legal-approval-browser-check.cjs`, contrôle de liens existant `.temp/p7-legal-final-links.cjs`.
+- Serveur de test local uniquement, ressources tierces bloquées durant Playwright. Aucun envoi de formulaire/courriel; aucune vérification de réception de la boîte, de production ou de nouvelle Preview distante.
+
+Les tests P7-LEGAL-FINAL (24/24 et 13 URL) et P7-06J restent historiques; les résultats ci-dessus concernent cette nouvelle révision. Aucun audit déjà terminé n’a été relancé.
+
+## Référence factuelle conservée — P7-LEGAL-FINAL, sans nouvel audit
 Sources : code local de l’application consulté en lecture seule; rapports P7-03, P7-05 final, P7-07 et P7-08A à G. Les constats déployés ci-dessous reposent sur ces validations datées, pas sur une nouvelle interrogation de production. Aucun audit SQL, Flutter ou Android antérieur n’a été rejoué.
 
 | Surface | Éléments constatés | Déployé ou candidat / limite |
 |---|---|---|
 | Inscription/authentification | `lib/services/auth_service.dart` : courriel/mot de passe, Supabase Auth, inscription et sessions. | Fonction existante. Le booléen 18+ et l’enregistrement d’attestation du code local sont candidats; leur présence locale ne prouve pas leur déploiement. |
 | Politique 18+ | P7-08A : règle produit approuvée pour toute l’application; P7-08B : serveur observé sans attestation ni garde d’âge. | Politique cible, contrôle non déployé. Une auto-déclaration ne certifie ni âge ni identité. |
-| Profils/avatars | `rider_profile_service.dart`, modèles avatar : profil, images et photos moto; `avatars` et `getPublicUrl` pour photos moto. P7-08F documente les URL publiques. | Fonction existante; toute personne possédant une URL publique peut lire l’image. La candidate 18+ ne privatise pas ces liens. Faire approuver cette visibilité. |
+| Profils/avatars | `rider_profile_service.dart`, modèles avatar : profil, images et photos moto; `avatars` et `getPublicUrl` pour photos moto. P7-08F documente les URL publiques. | Fonction existante; toute personne possédant une URL publique peut lire l’image. La candidate 18+ ne privatise pas ces liens. Visibilité publique approuvée par le propriétaire pour les images destinées à être publiques; protection des contenus privés à valider. |
 | Géolocalisation/historique | `ride_tracker.dart`, services de stockage/synchronisation/historique et P7-07 : points sur appareil, synchronisation; suivi Android actif possible en arrière-plan avec notification persistante. | Fonction existante. Les permissions, l’état du suivi et le réseau influencent le fonctionnement. Avis/consentement du binaire cible restent à confirmer; aucune surveillance d’urgence annoncée. |
 | Connect/Match | `matchmaking_service.dart`, `rider_match.dart`, `match_preferences_screen.dart` : préférences, suggestions, interactions, date de naissance distincte en mode Rencontres. P7-08C confirme les signatures et corps des RPC serveur. | Fonction existante. Le sélecteur 18+ ne vérifie pas l’âge réel. Finalités exactes, accès/visibilité, minimisation et conservation de la date à faire approuver; la réconciliation des RPC ne vaut pas approbation de ces pratiques. |
 | Rideon Meet | `meet_service.dart`, P7-05 : tables, accès et trigger de suppression Auth documentés. | Meets individuels anonymisés/annulés; Meets de groupe conservés sans attribution au créateur supprimé. Livraison push Meet réelle non qualifiée. |
@@ -39,39 +81,13 @@ Sources : code local de l’application consulté en lecture seule; rapports P7-
 - F : corrections locales supplémentaires sur delete_group/remove_group_member; deux assertions nouvelles non exécutées; URL publiques non privatisées.
 - G : précontrôle BLOCKED, aucun test ni déploiement. Empreinte candidate `60E9580EDFB99FC9DA2BBAE81A9CF1B548C3728169E198D1252A977252395AC3` non qualifiée par les résultats des versions précédentes.
 
-## Décisions humaines et formulations proposées
-Les formulations suivantes sont des propositions FR/EN à compléter ou confirmer; les crochets ne sont pas des faits et ne doivent pas être publiés tels quels.
 
-| Décision / information à obtenir du propriétaire | Formulation proposée FR / EN |
-|---|---|
-| Identité légale et statut | FR : « RIDEON est exploité par Xavier Armstrong, en nom personnel sous le nom commercial RIDEON. » EN: “RIDEON is operated by Xavier Armstrong, an individual operating under the trade name RIDEON.” Confirmer que cette identité déjà consignée reste exacte. |
-| Coordonnées officielles et responsable | FR : « Le responsable de la protection des renseignements personnels est [nom/fonction], joignable à [coordonnées approuvées]. » EN: “The person responsible for personal information protection is [name/role], reachable at [approved contact details].” Reconfirmer l’adresse postale déjà affichée, hello@ et leur suivi effectif. |
-| Conservation/suppression | FR : « Les renseignements de [catégorie] sont conservés [durée ou critère vérifié], puis [suppression/anonymisation validée], sauf [exception justifiée]. » EN: “[Category] information is retained for [verified period or criterion], then [validated deletion/anonymization], except for [justified exception].” Fournir règles, responsables, tâches effectives, reçus, logs, sauvegardes et procédure de reprise; résoudre le cas propriétaire de groupe. |
-| Fournisseurs/lieux | FR : « [Fournisseur] traite [données] pour [finalité] dans [lieux confirmés]. » EN: “[Provider] processes [data] for [purpose] in [confirmed locations].” Fournir contrats, sous-traitants, régions et configuration Firebase/Sentry du build; approuver la visibilité publique des images. |
-| Hors Québec/EFVP | FR : « [Données] sont traitées hors Québec dans [lieux confirmés], selon [mesures et ententes validées]. » EN: “[Data] is processed outside Quebec in [confirmed locations], subject to [validated safeguards and agreements].” Faire déterminer les EFVP applicables et fournir leurs conclusions/ententes; ne pas déduire tous les lieux de la région de la base. |
-| Droits/plaintes | FR : « Adressez vos demandes écrites à [contact]; [procédure approuvée] encadre leur réception, la vérification proportionnée et le suivi. » EN: “Send written requests to [contact]; [approved procedure] governs receipt, proportionate verification and follow-up.” Confirmer réception, registre, décisions, recours, incidents et capacité de répondre. |
-| 18+/comptes non admissibles | FR : « La politique cible prévoit un accès réservé aux 18 ans ou plus. Le contrôle en préparation repose sur une auto-déclaration et n’est pas déployé. » EN: “The target policy restricts access to people aged 18 or older. The control in preparation relies on self-declaration and is not deployed.” Approuver niveau d’assurance, traitement des comptes existants/non admissibles et voie de suppression; modifier l’état de déploiement seulement sur preuve. |
+## Références juridiques antérieures conservées
+[Loi sur le privé](https://www.legisquebec.gouv.qc.ca/fr/pdf/lc/P-39.1.pdf) et [CAI — recours et plaintes](https://www.cai.gouv.qc.ca/protection-renseignements-personnels/citoyens-protection-renseignements-personnels/recours-devant-commission), vérifiées lors de P7-LEGAL-FINAL. Aucune nouvelle analyse juridique globale effectuée. Le délai légal d’accès/rectification décrit dans les pages n’est pas un délai général de soutien ou de suppression. Ce rapport ne constitue pas un avis juridique.
 
-Faire aussi approuver les clauses finales de contenu/modération, responsabilité, frais éventuels, événements et différends; aucune clause manquante n’a été inventée. L’approbation éditoriale ne remplace pas cette décision juridique.
+## Décision finale et traçabilité
+**Décisions intégrées : PASS éditorial, PARTIEL opérationnel. Tests Web : PASS. PR non prête pour approbation finale inconditionnelle; prête pour revue juridique finale des brouillons. NO-GO publication** jusqu’à résolution des validations regroupées ci-dessus.
 
-## Tests Web nouveaux
-Raison du rejeu ciblé : nouveaux textes, nouvelles longueurs et liens. Script Playwright P7-06J existant réutilisé en limitant les routes aux quatre pages demandées, sans relancer l’audit de l’accueil.
+Révision depuis `7c1e558a0de421d4ee237fc8b259808f50f6277c`. Commits des pages : `976e7948` (Confidentialité), `f9b1912e` (Conditions), `7f1ed748` (Assistance), `a77640ba` (Suppression). Rapport existant mis à jour, aucun second rapport créé.
 
-- **24/24 PASS** : quatre pages × FR/EN × 375/768/1440 px; HTTP 200, choix/attribut de langue, avis de brouillon visibles, absence de débordement horizontal/titre, aucune erreur JavaScript et ressources internes disponibles.
-- **13 URL internes distinctes : PASS**, routes et ancres (y compris accueil/contact), menu mobile, fermeture Échap et persistance EN après navigation entre pages.
-- Syntaxe `legal.js` : PASS (`node --check`).
-- Captures confidentialité mobile FR, tablette EN et suppression ordinateur EN créées; mobile FR et ordinateur EN examinés visuellement : marque noire/verte, hiérarchie et avis conservés, aucune coupure observée.
-- Ancien lien de plainte CAI non vérifiable par l’outil : remplacé par la page officielle accessible de recours/plaintes. Aucun formulaire ni message envoyé.
-- Tests servis uniquement sur `127.0.0.1:8793`. Ressources tierces bloquées durant Playwright; pas de test d’envoi FormSubmit, de réception courriel, de disponibilité future des tiers ni de production. Aucune nouvelle Preview distante créée; P7-06J demeure une preuve historique, pas une preuve du contenu final.
-- Première tentative du script historique sur accueil hors périmètre arrêtée (attente d’image); campagne finale limitée aux quatre pages. Contrôle supplémentaire de langue corrigé pour attendre la fin de navigation; aucune modification du JS produit nécessaire.
-- Preuves locales : `.temp/p7-legal-final-browser-results.json`, `.temp/p7-legal-final-links-results.json`, `.temp/p7-legal-final-screenshots/`. Scripts : `.temp/p7-legal-final-browser-check.cjs` et `.temp/p7-legal-final-links.cjs`, dérivés du script existant `.temp/p7-06j-browser-check.cjs`.
-
-## Références de droit vérifiées
-Consultées le 8 novembre 2026 : [Loi sur le privé, version officielle](https://www.legisquebec.gouv.qc.ca/fr/pdf/lc/P-39.1.pdf), notamment gouvernance, transparence, transferts, conservation et demandes; [CAI — recours et plaintes](https://www.cai.gouv.qc.ca/protection-renseignements-personnels/citoyens-protection-renseignements-personnels/recours-devant-commission). Le délai légal d’accès/rectification déjà décrit ne doit pas être présenté comme délai général de soutien ou de suppression. Cette consolidation est un dossier de validation, pas un avis juridique.
-
-## Décision et traçabilité
-**GO pour soumettre les quatre brouillons à l’approbation humaine. NO-GO publication.** Il manque les confirmations du tableau, les procédures opérationnelles (dont groupe/suppression), la validation juridique et la qualification/décision distincte du contrôle 18+ avant de le décrire comme actif.
-
-Révision depuis le head `1e7afb672e166a4edf49cfcd82e78bbf8e7fa6e0`. Commits des pages : `765bb1c4`, `741c6133`, `469f5c33`, `2047b0a1`, puis correction du lien CAI `7b0a1624`. Lecture après écriture effectuée : les quatre fichiers distants correspondent exactement aux fichiers testés. Le dernier rejeu Web après correction du lien CAI confirme 24/24 PASS; les 13 URL internes restent valides. Rapport distant également relu et comparé.
-
-Aucune fusion, publication de production, migration/déploiement Supabase, modification Android, installation APK ni suppression de données. Les changements distants se limitent à la branche de PR et à sa description.
+Aucune fusion, publication, modification Android/Supabase, suppression de comptes ou de données, migration ni déploiement de production. Aucun consentement de principe à une suppression n’a été traité comme une autorisation de l’exécuter.
