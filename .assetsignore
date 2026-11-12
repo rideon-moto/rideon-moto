@@ -1,0 +1,5 @@
+.assetsignore
+wrangler.jsonc
+dist/
+README.md
+LIRE-MOI.txt
